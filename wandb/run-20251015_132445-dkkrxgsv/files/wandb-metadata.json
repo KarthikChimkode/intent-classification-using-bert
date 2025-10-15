@@ -1,0 +1,36 @@
+{
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "CPython 3.13.7",
+  "startedAt": "2025-10-15T07:54:45.512621Z",
+  "program": "D:\\Finrapt\\intent-classification using bert\\train_bert.py",
+  "codePath": "train_bert.py",
+  "codePathLocal": "train_bert.py",
+  "email": "bunnyyadav04@gmail.com",
+  "root": "D:\\Finrapt\\intent-classification using bert",
+  "host": "Karthik",
+  "executable": "D:\\Finrapt\\intent-classification using bert\\intentbert\\Scripts\\python.exe",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "gpu": "NVIDIA GeForce GTX 1650",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "500101541888",
+      "used": "45438427136"
+    }
+  },
+  "memory": {
+    "total": "17041244160"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce GTX 1650",
+      "memoryTotal": "4294967296",
+      "cudaCores": 896,
+      "architecture": "Turing",
+      "uuid": "GPU-45b4f3d6-7a9e-c90e-b08b-ced911832b0e"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "6xabbv0upq7y6qgdykhx6f7t2so8c0xs"
+}

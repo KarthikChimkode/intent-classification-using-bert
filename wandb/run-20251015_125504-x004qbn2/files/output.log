@@ -1,0 +1,23 @@
+Map:   0%|                                    | 0/20400 [00:00<?, ? examples/s]
+Traceback (most recent call last):
+  File "D:\Finrapt\intent-classification using bert\train_bert.py", line 52, in <module>
+    train_dataset = Dataset.from_dict({"text": train_texts, "labels": train_labels}).map(tokenize, batched=True)
+  File "C:\Users\karth\AppData\Local\Programs\Python\Python313\Lib\site-packages\datasets\arrow_dataset.py", line 562, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+                                           ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karth\AppData\Local\Programs\Python\Python313\Lib\site-packages\datasets\arrow_dataset.py", line 3324, in map
+    for rank, done, content in Dataset._map_single(**unprocessed_kwargs):
+                               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karth\AppData\Local\Programs\Python\Python313\Lib\site-packages\datasets\arrow_dataset.py", line 3680, in _map_single
+    for i, batch in iter_outputs(shard_iterable):
+                    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\karth\AppData\Local\Programs\Python\Python313\Lib\site-packages\datasets\arrow_dataset.py", line 3630, in iter_outputs
+    yield i, apply_function(example, i, offset=offset)
+             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karth\AppData\Local\Programs\Python\Python313\Lib\site-packages\datasets\arrow_dataset.py", line 3553, in apply_function
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "D:\Finrapt\intent-classification using bert\train_bert.py", line 49, in tokenize
+    return tokenizer(batch=["text"], padding="max_length", truncation=True, max_length=wandb.config.max_length)
+  File "C:\Users\karth\AppData\Local\Programs\Python\Python313\Lib\site-packages\transformers\tokenization_utils_base.py", line 2932, in __call__
+    raise ValueError("You need to specify either `text` or `text_target`.")
+ValueError: You need to specify either `text` or `text_target`.
