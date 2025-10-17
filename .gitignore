@@ -1,0 +1,6 @@
+intentbert/
+wandb/
+bert_intent_model/
+__pycache__/
+*.pyc
+*.pkl

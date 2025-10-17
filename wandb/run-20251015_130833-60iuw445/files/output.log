@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "D:\Finrapt\intent-classification using bert\train_bert.py", line 41, in <module>
-    tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
-                ^^^^^^^^^^^^^
-NameError: name 'BertTokenizer' is not defined. Did you mean: 'AutoTokenizer'?
